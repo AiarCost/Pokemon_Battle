@@ -1,0 +1,47 @@
+Program File Layout
+	Top comment block that includes:
+	-	Names that contributed to file
+	-	Summary of the program’s function
+
+Pre-main function includes in this order:
+	-	#include directives
+		Put comment with directives to tell group what usage it is for (except for stdio.h)
+	-	#define directives
+	-	Any global function prototypes
+-	Global variables
+
+Functions are below main()
+
+
+
+White Space
+	When there is a bracket, the code within the bracket becomes indented. Ex below (From Professor Jeffe CS125 C style)
+ 
+
+
+
+Comments
+	Function Comment before each Function which includes:
+		-	Description of function usage
+		-	Contributor’s Name
+Block/section comments before each section of code includes:
+		-	Description of usage of code
+Declaration comments after each declaration regarding values
+		-	Usage of the variable
+
+
+
+Naming Conventions
+
+General naming convention will be CamelCase except for the following:
+	-	Constants “variables” will be CAPITALIZED
+			IE. PI = 3.1415….
+	-	For variables that reference a different variable, it will have an underscore before variable name.
+			IE.  _CamelCase
+
+
+
+Function Layout
+
+The opening bracket for a function will lay on the same line as the name 
+The closing bracket will lay on it’s own line and be in parallel with the Function
