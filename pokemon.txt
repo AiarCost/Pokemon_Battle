@@ -1,8 +1,37 @@
 1. Player chooses the starting pokemon 
-
+    -Pick Potentials
+        -Bulbasaur, Charmander, Squirtle, Pikachu 
+ 
 2. Computer randomly chooses a pokemon as an opponent
 
-3. The Battle; 
-    -turn based system
-    -attacks UI 
-    - 
+3. The Battle 
+
+    ~ Player ~
+
+        -turn based system
+
+        -attack UI {player options}
+            -randomized amount of attacks (only one or two attacks)
+            -account for elemental differences
+
+        -inventory {player options}
+            -potions; would be based off of the ratio of health lost to health kept 
+
+        -flee {player options}
+    
+    ~ AI ~
+
+        -Enemy Attack
+    
+        -Enemy Flees
+
+        -No inventory; no potions 
+
+    ~ UI ~
+
+        -ASCII Art {MAYBE}
+
+4. End of Battle
+    - Restart new pokemon
+    - Continue with the same pokemon 
+    
