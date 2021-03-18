@@ -1,0 +1,8 @@
+1. Player chooses the starting pokemon 
+
+2. Computer randomly chooses a pokemon as an opponent
+
+3. The Battle; 
+    -turn based system
+    -attacks UI 
+    - 
