@@ -17,17 +17,30 @@
 		IV (between 0-31)
 		attack
 		defense
+
 	Pikachu potential attacks
-		thunder shock(E), Quick Attack(N), 
+		thunder shock(E), Quick Attack(N)
+		HP: 35
+		Attack: 55
+		Defense: 30
 
 	Bulbasaur potential attacks
 		tackle(N), vine whip(G)
+		HP: 45
+		Attack: 49
+		Defense: 49
 	
 	Charmander potential attacks
 		ember(F), Scratch(N)
+		HP: 39 
+		Attack: 52
+		Defense: 43
 
 	Squirtle potential attacks
 		tackle(N), bubble(W)
+		HP: 44
+		Attack: 48 
+		Defense: 65
 		
 
 3. The Battle 
