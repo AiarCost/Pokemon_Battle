@@ -1,14 +1,19 @@
 1. Player chooses the starting pokemon 
     -Pick Potentials
         -Bulbasaur, Charmander, Squirtle, Pikachu 
+    - If player closes and opens again, they can use their previous pokemon if they saved it
  
 2. Computer randomly chooses a pokemon as an opponent
+    - this would randomly pick the pokemon
+	   - the attacks would also be randomized based on element
+    - player would get random attacks based on their pokemon as well
 
 3. The Battle 
 
     ~ Player ~
 
         -turn based system
+    	    - one action per turn for both player & enemies
 
         -attack UI {player options}
             -randomized amount of attacks (only one or two attacks)
@@ -18,20 +23,25 @@
             -potions; would be based off of the ratio of health lost to health kept 
 
         -flee {player options}
+	    - player can have their pokemon attempt to flee from battle
     
     ~ AI ~
 
         -Enemy Attack
+	    -randomixed attacks choices
+	    - account for elemental differences
     
         -Enemy Flees
+	    - Once health down a certain percentage, has chance to flee, gets bigger the less health it has
 
         -No inventory; no potions 
 
     ~ UI ~
-
+	- Text for now
         -ASCII Art {MAYBE}
 
 4. End of Battle
     - Restart new pokemon
+	    - Would then just restart the whole system
     - Continue with the same pokemon 
-    
+    	    - Would just keep the same stats
