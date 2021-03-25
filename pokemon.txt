@@ -1,12 +1,34 @@
 1. Player chooses the starting pokemon 
     -Pick Potentials
-        -Bulbasaur, Charmander, Squirtle, Pikachu 
+        - Bulbasaur
+	- Charmander
+	- Squirtle
+	- Pikachu 
     - If player closes and opens again, they can use their previous pokemon if they saved it
  
 2. Computer randomly chooses a pokemon as an opponent
     - this would randomly pick the pokemon
 	   - the attacks would also be randomized based on element
     - player would get random attacks based on their pokemon as well
+
+
+	Variables needed to be generated:
+		HP
+		IV (between 0-31)
+		attack
+		defense
+	Pikachu potential attacks
+		thunder shock(E), Quick Attack(N), 
+
+	Bulbasaur potential attacks
+		tackle(N), vine whip(G)
+	
+	Charmander potential attacks
+		ember(F), Scratch(N)
+
+	Squirtle potential attacks
+		tackle(N), bubble(W)
+		
 
 3. The Battle 
 
