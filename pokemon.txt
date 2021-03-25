@@ -19,32 +19,62 @@
 		defense
 
 	Pikachu potential attacks
-		thunder shock(E), Quick Attack(N)
+		thunder shock(E)
+			power: 40
+			acc: 100%	
+		Quick Attack(N)
+			power: 40
+			acc: 100%
 		HP: 35
 		Attack: 55
 		Defense: 30
 
 	Bulbasaur potential attacks
-		tackle(N), vine whip(G)
+		tackle(N)
+			power: 35
+			acc: 95%
+		vine whip(G)
+			power: 35
+			acc:100%
 		HP: 45
 		Attack: 49
 		Defense: 49
 	
 	Charmander potential attacks
-		ember(F), Scratch(N)
+		ember(F)
+			power: 40
+			acc: 100%
+		Scratch(N)
+			power: 40
+			acc: 100%
 		HP: 39 
 		Attack: 52
 		Defense: 43
 
 	Squirtle potential attacks
-		tackle(N), bubble(W)
+		tackle(N)
+			power: 35
+			acc: 95%
+		bubble(W)
+			power: 20
+			acc: 100%
 		HP: 44
 		Attack: 48 
 		Defense: 65
-		
+	Elementals Damages:
+	
+	Grass: 
+
+
+	
 
 3. The Battle 
 
+
+	Mathmatics for damage:
+	((2*Level(1) +10)/250 * (attack/defense) * power +2) * modifier
+
+	modifier = STAB * type * critical * other * (random [.85, 1])
     ~ Player ~
 
         -turn based system
