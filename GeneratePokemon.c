@@ -5,8 +5,9 @@ Summary of program: Takes the text file for a pokemon and gives
 variables to the stats to help set up the battle of the pokemon. 
 It also will have the generation of the enemy pokemon as well.
 
-****************************************/
+BUGS: Will have a "Segmentation Fault" occur for Charmander
 
+****************************************/
 
 
 #include <stdio.h> 
@@ -19,16 +20,24 @@ typedef struct PokemonStats{
   int pokeHP;
   int pokeAttack;
   int pokeDefense;
+  char pokeAttackName1[30];
+  int pokeAttackPower1;
+  int pokeAttackAcc1;
+  char pokeAttackName2[30];
+  int pokeAttackPower2;
+  int pokeAttackAcc2;
   int pokeIV;
+  
 
 }Pokemon;
 
 Pokemon GenerateStats(int UserInput);
 
 int main(){
-
-  Pokemon playerPokmon = GenerateStats(1);
-  Pokemon enemyPokemon = GenerateStats(-1);
+  int hello;
+  scanf("%d", &hello);
+  Pokemon playerPokmon = GenerateStats(hello);
+  //Pokemon enemyPokemon = GenerateStats(-1);
   
   return (0);
 }
@@ -82,6 +91,24 @@ Pokemon GenerateStats(int UserInput){
       case 3: 
         x.pokeDefense = atoi(fileOutput);
         break;     
+      case 4:
+        strcpy(x.pokeAttackName1, fileOutput);
+        break;
+      case 5:
+        x.pokeAttackPower1 = atoi(fileOutput);
+        break;
+      case 6:
+        x.pokeAttackAcc1 = atoi(fileOutput);
+        break;
+      case 7:
+        strcpy(x.pokeAttackName2, fileOutput);
+        break;
+      case 8:
+        x.pokeAttackPower2 = atoi(fileOutput);
+        break;
+      case 9:
+        x.pokeAttackAcc2 = atoi(fileOutput);
+        break;
     }
     
    fpLineCounter++; 
@@ -89,6 +116,8 @@ Pokemon GenerateStats(int UserInput){
   
   x.pokeIV = rand()%31+1;
   printf(" name: %s HP: %d \n Attack: %d \n Defense %d \n IV: %d\n", x.pokeName, x.pokeHP, x.pokeAttack, x.pokeDefense, x.pokeIV);
+  printf(" Attack 1: %s Power: %d \n Acc: %d %\n", x.pokeAttackName1, x.pokeAttackPower1, x.pokeAttackAcc1);
+    printf(" Attack 2: %s Power: %d \n Acc: %d %\n", x.pokeAttackName2, x.pokeAttackPower2, x.pokeAttackAcc2);
   return(x);
 
 

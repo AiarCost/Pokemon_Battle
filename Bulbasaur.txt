@@ -2,3 +2,9 @@ Bulbasaur
 45
 49
 49
+Vine Whip
+35
+100
+Tackle
+35
+95
