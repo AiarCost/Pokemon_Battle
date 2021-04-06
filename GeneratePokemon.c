@@ -33,6 +33,11 @@ typedef struct PokemonStats{
 
 Pokemon GenerateStats(int UserInput);
 
+int main(){
+
+  Pokemon player = GenerateStats(3);
+
+}
 
 
 /*****FUNCTION*****/
@@ -59,6 +64,8 @@ Pokemon GenerateStats(int UserInput){
       break;
     case 3:
       fp=fopen("Charmander.txt", "r");
+      printf("FIle opened %d\n",fp);
+      
       break;
     case 4:
       fp=fopen("Squirtle.txt", "r");
@@ -70,6 +77,7 @@ Pokemon GenerateStats(int UserInput){
   /*This opens the gile and continues to get each line from txt file until no more lines to get*/
   
   while(fgets(fileOutput, 60, fp) != NULL){
+    printf("WHileLoop\n");
     /*This is a line counter. Txt files are made to have this structure for each pokemon. Will assign var to correct line*/
     switch (fpLineCounter){
       case 0:
@@ -109,8 +117,8 @@ Pokemon GenerateStats(int UserInput){
   
   x.pokeIV = rand()%31+1;
   printf(" name: %s HP: %d \n Attack: %d \n Defense %d \n IV: %d\n", x.pokeName, x.pokeHP, x.pokeAttack, x.pokeDefense, x.pokeIV);
-  printf(" Attack 1: %s Power: %d \n Acc: %d %\n", x.pokeAttackName1, x.pokeAttackPower1, x.pokeAttackAcc1);
-    printf(" Attack 2: %s Power: %d \n Acc: %d %\n", x.pokeAttackName2, x.pokeAttackPower2, x.pokeAttackAcc2);
+  printf(" Attack 1: %s Power: %d \n Acc: %d %%\n", x.pokeAttackName1, x.pokeAttackPower1, x.pokeAttackAcc1);
+    printf(" Attack 2: %s Power: %d \n Acc: %d %%\n", x.pokeAttackName2, x.pokeAttackPower2, x.pokeAttackAcc2);
   return(x);
 
 
