@@ -33,16 +33,9 @@ typedef struct PokemonStats{
 
 Pokemon GenerateStats(int UserInput);
 
-int main(){
-  int hello;
-  scanf("%d", &hello);
-  Pokemon playerPokmon = GenerateStats(hello);
-  //Pokemon enemyPokemon = GenerateStats(-1);
-  
-  return (0);
-}
 
 
+/*****FUNCTION*****/
 Pokemon GenerateStats(int UserInput){
   
   /* vars declared. Want to change some to structs to help with player & enemy stats*/
