@@ -20,14 +20,19 @@ typedef struct PokemonStats{
   int pokeHP;
   int pokeAttack;
   int pokeDefense;
+  
   char pokeAttackName1[30];
   int pokeAttackPower1;
   int pokeAttackAcc1;
+  
   char pokeAttackName2[30];
   int pokeAttackPower2;
   int pokeAttackAcc2;
+
   int pokeIV;
-  
+  char pokeType[10];
+  char pokeAttackType1[10];
+  char pokeAttackType2[10];  
 
 }Pokemon;
 
@@ -64,8 +69,6 @@ Pokemon GenerateStats(int UserInput){
       break;
     case 3:
       fp=fopen("Charmander.txt", "r");
-      printf("FIle opened %d\n",fp);
-      
       break;
     case 4:
       fp=fopen("Squirtle.txt", "r");
@@ -76,8 +79,7 @@ Pokemon GenerateStats(int UserInput){
 
   /*This opens the gile and continues to get each line from txt file until no more lines to get*/
   
-  while(fgets(fileOutput, 60, fp) != NULL){
-    printf("WHileLoop\n");
+  while(fgets(fileOutput, 100, fp) != NULL){
     /*This is a line counter. Txt files are made to have this structure for each pokemon. Will assign var to correct line*/
     switch (fpLineCounter){
       case 0:
@@ -110,15 +112,28 @@ Pokemon GenerateStats(int UserInput){
       case 9:
         x.pokeAttackAcc2 = atoi(fileOutput);
         break;
+      case 10:
+        strcpy(x.pokeType, fileOutput);
+        break;
+      case 11:
+        strcpy(x.pokeAttackType1, fileOutput);
+        break;
+      case 12:
+        strcpy(x.pokeAttackType2, fileOutput);
+        break;
     }
     
    fpLineCounter++; 
+   printf("%d\n", fpLineCounter);
   }
   
   x.pokeIV = rand()%31+1;
   printf(" name: %s HP: %d \n Attack: %d \n Defense %d \n IV: %d\n", x.pokeName, x.pokeHP, x.pokeAttack, x.pokeDefense, x.pokeIV);
   printf(" Attack 1: %s Power: %d \n Acc: %d %%\n", x.pokeAttackName1, x.pokeAttackPower1, x.pokeAttackAcc1);
     printf(" Attack 2: %s Power: %d \n Acc: %d %%\n", x.pokeAttackName2, x.pokeAttackPower2, x.pokeAttackAcc2);
+    printf(" Type: %s \n AttackType1: %s \n AttackType2: %s \n", x.pokeType, x.pokeAttackType1, x.pokeAttackType2);
+ 
+
   return(x);
 
 

@@ -8,3 +8,6 @@ Thunder Shock
 Quick Attack
 40
 100
+Electric
+Electric
+Physical

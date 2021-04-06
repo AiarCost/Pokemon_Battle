@@ -8,3 +8,6 @@ Bubble
 Tackle
 35
 95
+Water
+Water
+Physical

@@ -8,3 +8,6 @@ Vine Whip
 Tackle
 35
 95
+Grass
+Grass
+Physical
