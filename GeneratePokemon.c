@@ -38,11 +38,6 @@ typedef struct PokemonStats{
 
 Pokemon GenerateStats(int UserInput);
 
-int main(){
-
-  Pokemon player = GenerateStats(3);
-
-}
 
 
 /*****FUNCTION*****/

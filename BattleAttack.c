@@ -16,12 +16,6 @@ Program Summary: This will hold the functions for attacking, items, and fleeing
 #define FLEEINGCHANCE 85
 
 
-int main(){
-
-  Pokemon player = GenerateStats(1); /*Retrieved from GeneratePokemon.c*/
-  return(0);
-
-}
 
 
 int PlayerFleeAttempt(int GameOn){
