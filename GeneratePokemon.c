@@ -119,7 +119,6 @@ Pokemon GenerateStats(int UserInput){
     }
     
    fpLineCounter++; 
-   printf("%d\n", fpLineCounter);
   }
   
   x.pokeIV = rand()%31+1;
@@ -128,7 +127,7 @@ Pokemon GenerateStats(int UserInput){
     printf(" Attack 2: %s Power: %d \n Acc: %d %%\n", x.pokeAttackName2, x.pokeAttackPower2, x.pokeAttackAcc2);
     printf(" Type: %s \n AttackType1: %s \n AttackType2: %s \n", x.pokeType, x.pokeAttackType1, x.pokeAttackType2);
  
-
+  fclose(fp);
   return(x);
 
 
