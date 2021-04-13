@@ -42,10 +42,12 @@ void EnemyAIChoose(Pokemon Enemy, int enemyMaxHP){
           if(RandomRoll == 1){
             //Enemy Attack 1
             printf("Enemy Attack 1\n");
+            int aiInput = 1;
           }
           else{
             //Enemy Attack 2
             printf("Enemy Attack 2\n");
+            int aiInput = 2;
         }
       }
   }   

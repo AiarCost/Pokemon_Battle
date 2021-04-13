@@ -6,33 +6,54 @@
 **************************************/
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include "GeneratePokemon.c"
 
-int pokeDamage (Enemy) //function for the enemy attack
+void pokeDamage (Pokemon *Player, Pokemon *Enemy, int aiInput) //function for the enemy attack
 {
-  int pokeHP;
-  int pokeAttack;
-  int pokeDefense;
+  //if the attack is an elemental attack...multiply by 1.5
+  float STAB;
+  if(aiInput == 1){
+    STAB = 1.5f;
+  }
+  else {
+    STAB = 1;
+  }
   
-  modifier = (STAB * type * critical * other * (random [.85, 1]));
-  damage = ((2+10)/250 * (pokeAttack/pokeDefense) * power +2) * modifier);
   
-  return Enemy;
+  float modifier = (STAB * type * ((float)(rand()%16+85)/100));
+  float damage = (((2+10)/250 * ((*Enemy).pokeAttack/(*Player).pokeDefense) * (*Enemy).pokeAttackPower1 +2) * modifier);
+  damage = (int)(damage + .5);
+  printf("%d", damage);
+  
 }
 
-int playerDamage (Player)  //function for the player attack
+void playerDamage (Pokemon *Player, Pokemon *Enemy, int userInput)  //function for the player attack
 {
-  int playerHP;
-  int playerAttack;
-  int playerDefense;
+
+  float STAB;
+  if(userInput == 1){
+    STAB = 1.5f;
+  }
+  else {
+    STAB = 1;
+  }
   
-  modifier = (STAB * type * critical * other * (random [.85, 1]));
-  damage = ((2+10)/250 * (pokeAttack/pokeDefense) * power +2) * modifier);
   
-  return Player;
+  float modifier = (STAB * type * ((float)(rand()%16+85)/100));
+  float damage = (((2+10)/250 * ((*Player).pokeAttack/(*Enemy).pokeDefense) * (*Player).pokeAttackPower1 +2) * modifier);
+  damage = (int)(damage +.5);
+  printf("%d", damage); 
+
 }
+
 
 int main()
 {
-  pokeDamage();
-  playerDamage();
+  Pokemon player = GenerateStats(1);
+  Pokemon enemy = GenerateStats(-1);
+  pokeDamage(&player, &enemy, 1);
+  playerDamage(&player, &enemy, 1);
+  return 0;
 }

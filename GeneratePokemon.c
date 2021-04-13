@@ -5,8 +5,6 @@ Summary of program: Takes the text file for a pokemon and gives
 variables to the stats to help set up the battle of the pokemon. 
 It also will have the generation of the enemy pokemon as well.
 
-BUGS: Will have a "Segmentation Fault" occur for Charmander
-
 ****************************************/
 
 
@@ -15,6 +13,7 @@ BUGS: Will have a "Segmentation Fault" occur for Charmander
 #include <string.h> //Usages of strcpy() function
 #include <time.h> //Usage of time regarding srand()
 
+//Creation of Pokemon Stats and things needed to play the game
 typedef struct PokemonStats{
   char pokeName[60];
   int pokeHP;
