@@ -106,7 +106,7 @@ void pokeDamage (Pokemon *Player, Pokemon *Enemy, int aiInput) //function for th
   }
   
   float type;
-  type = TypeMultiplier((*Enemy), (*Player));
+  type = Typemultiplier((*Enemy), (*Player));
   
   float modifier = (STAB * type * ((float)(rand()%16+85)/100));
   float damage = (((2+10)/250 * ((*Enemy).pokeAttack/(*Player).pokeDefense) * (*Enemy).pokeAttackPower1 +2) * modifier);
@@ -127,7 +127,7 @@ void playerDamage (Pokemon *Player, Pokemon *Enemy, int userInput)  //function f
   }
   
   float type;
-  type = TypeMultplier(&Player, &Enemy);
+  type = Typemultiplier((*Player), (*Enemy));
   
   float modifier = (STAB * type * ((float)(rand()%16+85)/100));
   float damage = (((2+10)/250 * ((*Player).pokeAttack/(*Enemy).pokeDefense) * (*Player).pokeAttackPower1 +2) * modifier);

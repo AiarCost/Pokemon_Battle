@@ -35,3 +35,19 @@ void PlayerInterface(int PokemonSelect) {
         fclose(dc4);
     }
 }
+
+void PlayerMove() {
+    
+    int Move;
+    int Check;
+    printf("Type in your move: ");
+    Check = scanf("%d", &Move);
+     
+    /* Robust error checking */
+    while((Move <= 0) || (Move >= 5) || (Check != 1)) {
+        printf("\n");
+        printf("           Invalid input. Please type a number 1-4:");
+        scanf("%*[^\n]");
+        Check = scanf("%d", &Move);
+    }
+}

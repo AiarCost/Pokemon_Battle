@@ -1,8 +1,5 @@
 #include <stdio.h>
-#define ASCII 128 /* Global Variable that includes all 128 ASCII characters */
-
-/* Used to print ASCII Art within any file 
-   Contributor: Zachary Traynor            */   
+#define ASCII 128
 
 void AsciiArt(FILE *fp) {
     
@@ -11,4 +8,5 @@ void AsciiArt(FILE *fp) {
         printf("%s", Art);
     }
 }
+
 

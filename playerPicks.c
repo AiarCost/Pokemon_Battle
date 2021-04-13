@@ -85,6 +85,7 @@ Pokemon PokemonSelection() {
 
     Pokemon player = GenerateStats(PokemonSelect);
     PlayerInterface(PokemonSelect);    
+    PlayerMove();
 
 return player; 
 }
