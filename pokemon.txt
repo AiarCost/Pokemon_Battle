@@ -15,7 +15,7 @@
             -account for elemental differences
 
         -inventory {player options}
-            -potions; would be based off of the ratio of health lost to health kept 
+            -potions; would be based off of the ratio of health lost to health kept or hardcoded 
 
         -flee {player options}
     
@@ -31,7 +31,7 @@
 
         -ASCII Art {MAYBE}
 
-4. End of Battle
+4. End of Battle {MAYBE}
     - Restart new pokemon
     - Continue with the same pokemon 
     
