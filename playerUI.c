@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "playerInventory.c"
 
 /* Function is used to print the users choices 
    when fighting during the battle             
@@ -50,4 +51,21 @@ void PlayerMove() {
         scanf("%*[^\n]");
         Check = scanf("%d", &Move);
     }
+<<<<<<< HEAD
+    
+    switch Move{
+    
+      case 1:
+        
+      case 2:
+      
+      case 3:
+        playerInventory();
+        break;
+      case 4:
+        playerFlee();
+        break
+    }
+=======
+>>>>>>> 8b83184f109a72f1440a02fd00821532bb147e79
 }

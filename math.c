@@ -96,10 +96,12 @@ float Typemultiplier(Pokemon Attacker, Pokemon Defender){
 
 void pokeDamage (Pokemon *Player, Pokemon *Enemy, int aiInput) //function for the enemy attack
 {
+
   //if the attack is an elemental attack...multiply by 1.5
   float STAB;
   if(aiInput == 1){
     STAB = 1.5f;
+
   }
   else {
     STAB = 1;
@@ -107,11 +109,19 @@ void pokeDamage (Pokemon *Player, Pokemon *Enemy, int aiInput) //function for th
   
   float type;
   type = Typemultiplier((*Enemy), (*Player));
+<<<<<<< HEAD
+  printf("type: %f ", type);
+=======
   
+>>>>>>> 8b83184f109a72f1440a02fd00821532bb147e79
   float modifier = (STAB * type * ((float)(rand()%16+85)/100));
+  printf("modifier: %f ", modifier);
   float damage = (((2+10)/250 * ((*Enemy).pokeAttack/(*Player).pokeDefense) * (*Enemy).pokeAttackPower1 +2) * modifier);
+  printf("Damage: %f ", damage);
   damage = (int)(damage + .5);
-  printf("%d", damage);
+  printf("%f ", damage);
+  (*Player).pokeHP = (*Player).pokeHP - damage;
+  printf("****%d \n", (*Player).pokeHP);
   
 }
 
@@ -125,14 +135,22 @@ void playerDamage (Pokemon *Player, Pokemon *Enemy, int userInput)  //function f
   else {
     STAB = 1;
   }
-  
+  printf("PLAYERSTAB: %f ",STAB);
   float type;
   type = Typemultiplier((*Player), (*Enemy));
+<<<<<<< HEAD
+  printf("Ptype: %f", type);
+=======
+>>>>>>> 8b83184f109a72f1440a02fd00821532bb147e79
   
   float modifier = (STAB * type * ((float)(rand()%16+85)/100));
+  printf("Pmodifier: %f ", modifier);
   float damage = (((2+10)/250 * ((*Player).pokeAttack/(*Enemy).pokeDefense) * (*Player).pokeAttackPower1 +2) * modifier);
+  printf("PDamage: %f ", damage);
   damage = (int)(damage +.5);
-  printf("%d", damage); 
+  printf("%f", damage); 
+  (*Enemy).pokeHP = (*Enemy).pokeHP - damage;
+  printf("****%d", (*Enemy).pokeHP);
 
 }
 
