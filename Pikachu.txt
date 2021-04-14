@@ -1,0 +1,13 @@
+Pikachu
+35
+55
+30
+Thunder Shock
+40
+100
+Quick Attack
+40
+100
+Electric
+Electric
+Physical
