@@ -1,0 +1,13 @@
+Charmander
+39
+52
+43
+Ember
+40
+100
+Scratch
+40
+100
+Fire
+Fire
+Physical

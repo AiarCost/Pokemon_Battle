@@ -1,0 +1,13 @@
+Squirtle
+44
+48
+65
+Bubble
+20
+100
+Tackle
+35
+95
+Water
+Water
+Physical
