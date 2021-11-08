@@ -1,6 +1,6 @@
 # Pokemon_Battle
 
-This is a C program that would recreate the pokemon battle in a more text only version. Created with 2 other class mates, Zachary Taylor, and Katelyn Ripa
+This is a C program that would recreate the pokemon battle in a more text only version. Created with 2 other class mates, Zachary Traynor, and Katelyn Ripa
 
 To run this program, download all the scripts on main and compile using this below:
 
